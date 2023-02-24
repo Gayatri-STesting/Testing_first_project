@@ -24,7 +24,8 @@ public class Abstract_Component {
 	}
 
 	public void waitFOr_Element(By findBy) {
-	WebDriverWait wait =new WebDriverWait(driver,Duration,ofSecond(5));
+	//WebDriverWait wait =new WebDriverWait(driver,Duration,ofSecond(5));
+		WebDriverWait wait =new WebDriverWait(driver,Duration,ofSecond(10));
 	wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
 	//driver.manage().timeouts().implicitlyWait(50,TimeUnit.SECONDS);
 	}
